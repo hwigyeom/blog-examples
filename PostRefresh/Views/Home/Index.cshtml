@@ -1,0 +1,33 @@
+﻿@using PostRefresh.Models
+@model IEnumerable<Todo>
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (var item in Model)
+            {
+
+                <li>
+                    <input type="checkbox" name="chk" value="@item.Key" checked="@item.IsComplete" />
+                    <span>@item.Title</span>
+                </li>
+            }
+        </ul>
+
+    </div>
+    <form method="post">
+        <fieldset>
+            <legend>항목 추가</legend>
+
+            <p>
+                <input type="text" name="title" />
+                <button type="submit">저장</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
