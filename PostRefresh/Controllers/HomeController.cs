@@ -28,8 +28,8 @@ namespace PostRefresh.Controllers
             return View(model);
         }
 
-        [HttpPost]
-        public IActionResult Index([FromForm]string title)
+        [HttpPost, Route("Save")]
+        public IActionResult Save([FromForm]string title)
         {
             if (!string.IsNullOrWhiteSpace(title))
             {
@@ -38,7 +38,7 @@ namespace PostRefresh.Controllers
 
             var model = Repository.GetItems();
 
-            return View(model);
+            return View("Index", model);
         }
     }
 }
