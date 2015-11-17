@@ -10,7 +10,10 @@ namespace CSharp6
     {
         static void Main(string[] args)
         {
+            StringInterpolation si = new StringInterpolation();
 
+            si.OldSample();
+            si.Interpolation();
         }
     }
 }
