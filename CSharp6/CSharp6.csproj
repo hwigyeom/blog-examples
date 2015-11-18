@@ -44,12 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CatchFilter.cs" />
+    <Compile Include="CatchFinallyAwait.cs" />
+    <Compile Include="ExpressionBodied.cs" />
     <Compile Include="ImprovementAutoProperty.cs" />
+    <Compile Include="IndexInitializers.cs" />
     <Compile Include="NameofOperator.cs" />
     <Compile Include="NullConditionOperator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringInterpolation.cs" />
+    <Compile Include="UsingStatic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
